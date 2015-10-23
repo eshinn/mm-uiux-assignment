@@ -1,0 +1,16 @@
+{
+  "name": "mm-uiux-assignment",
+  "version": "0.1.0",
+  "description": "Assignment for UI/UX position at MadMobile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/eshinn/mm-uiux-assignment.git"
+  },
+  "author": "Eric Shinn",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/eshinn/mm-uiux-assignment#readme"
+}
