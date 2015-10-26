@@ -11,4 +11,7 @@ module.exports = (grunt) ->
     css:
       src: './{build,dist}/public/**/*.css'
 
+    img:
+      src: './{build,dist}/public/**/*.{png,jpg,gif}'
+
   grunt.loadNpmTasks 'grunt-contrib-clean'

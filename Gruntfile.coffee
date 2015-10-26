@@ -1,6 +1,7 @@
 module.exports = (grunt) ->
 
   # Configuration
+  grunt.cacheMap = []
   grunt.initConfig
     pkg: require './package.json'
 
@@ -16,6 +17,7 @@ module.exports = (grunt) ->
     'clean:all'
     'html:dev'
     'css:dev'
+    'img:dev'
     'connect'
     'browserSync'
     'watch'
@@ -30,4 +32,9 @@ module.exports = (grunt) ->
   grunt.registerTask 'css:dev', [
     'less:dev'
     'copy:css'
+  ]
+
+  # images
+  grunt.registerTask 'img:dev', [
+    'imagemin:dev'
   ]

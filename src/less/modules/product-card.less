@@ -1,0 +1,65 @@
+.merch-item {
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.4);
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 1.2em;
+  margin: 0.75em;
+  display: -webkit-flex;
+  display: flexbox;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+  -webkit-flex: 0 1 ~'calc(100% / 2 - 1.5em)';
+  flex: 0 1 ~'calc(100% / 2 - 1.5em)';
+
+  .thumbnail > img {
+      width: 100%;
+  }
+
+  .description {
+    font: normal normal normal 1.2em/1.2 @fontstack-display;
+    color: @color-default-text;
+    margin-bottom: 0.5em;
+    letter-spacing: -0.03em;
+  }
+}
+
+.price-current,
+.price-original {
+
+  &:before {
+    content: '$';
+  }
+
+  font: normal normal normal 1.2em/1.2 @fontstack-display;
+  display: block;
+}
+
+.price-original {
+  text-decoration: line-through;
+  font-size: 1em;
+}
+
+.price-sale {
+  color: @color-price-sale;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 48em) {
+  .merch-item {
+    margin: 1.5em;
+    -webkit-flex: 0 1 ~'calc(100% / 5 - 3em)';
+    flex: 0 1 ~'calc(100% / 5 - 3em)';
+
+    .description {
+      font-size: 1.6vw;
+    }
+  }
+
+  .price-current {
+    font-size: 1.6vw;
+  }
+  .price-original {
+    font-size: 1.3vw;
+  }
+}

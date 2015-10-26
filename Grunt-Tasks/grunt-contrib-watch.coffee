@@ -13,4 +13,8 @@ module.exports = (grunt) ->
       files: 'src/less/**/*.less'
       tasks: ['clean:css', 'css:dev']
 
+    img:
+      files: 'src/images/**/*.{png,gif,jpg}'
+      tasks: ['clean:img', 'img:dev']
+
   grunt.loadNpmTasks 'grunt-contrib-watch'

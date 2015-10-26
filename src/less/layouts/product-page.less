@@ -1,0 +1,51 @@
+body,
+.master-head,
+.master-footer {
+  background-color: #fff;
+  font-family: @fontstack-body;
+}
+
+a {
+  color: @color-mm-orange;
+  text-decoration: none;
+}
+
+.merch-items {
+  width: 100%;
+  background-color: @color-ui-background;
+  border-bottom: 1px solid @color-borders;
+
+  padding: 0.75em;
+  box-sizing: border-box;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.pagination-ctrl {
+  -webkit-flex: 1 1 100%;
+  box-sizing: border-box;
+  padding: 0.75em;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+
+}
+
+@media screen and (min-width: 48em) {
+  .merch-items {
+    padding: 1.5em;
+  }
+
+  .pagination-ctrl {
+    padding: 1.5em 3em;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+  }
+}
