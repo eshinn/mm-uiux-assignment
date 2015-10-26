@@ -110,10 +110,12 @@ input[id='show-nav']:checked ~ .app-nav .show-nav-btn {
   & > ul {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
-    // display: -webkit-flex;
+    display: -webkit-flex;
     display: flex;
     // -webkit-flex-flow: column;
-    flex-flow: column;
+    // flex-flow: column;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
 }
